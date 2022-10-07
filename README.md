@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution
-  URL: []()
+  URL: [https://www.frontendmentor.io/solutions/your-feedback-is-welcome-PmOqNchB8O](https://www.frontendmentor.io/solutions/your-feedback-is-welcome-PmOqNchB8O)
 - Live Site
   URL: [https://jorggyh.github.io/article-preview-component/](https://jorggyh.github.io/article-preview-component/)
 
