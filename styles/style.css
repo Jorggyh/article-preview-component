@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px = 1rem */
+}
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--very-dark-grayish-blue: hsl(217, 19%, 35%);
+	--desaturated-dark-blue: hsl(214, 17%, 51%);
+	--grayish-blue: hsl(212, 23%, 69%);
+	--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: var(--light-grayish-blue);
+	justify-content: center;
+	margin: 2.4rem 1rem;
+	font-family: 'Manrope', sans-serif;
+}
+
+main {
+	max-width: 32.7rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	height: fit-content;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+figure {
+	height: 20rem;
+}
+
+figure img {
+	width: 100%;
+	height: 20rem;
+	object-fit: cover;
+	object-position: top -15px right 0;
+}
+
+.container {
+	position: relative;
+}
+
+/* DESCRIPTION */
+.description {
+	background-color: var(--white);
+	padding: 3.6rem 3rem 0;
+}
+
+h1 {
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	color: var(--very-dark-grayish-blue);
+	font-weight: 700;
+}
+
+p {
+	font-size: 1.3rem;
+	width: 96%;
+	line-height: 2rem;
+	color: var(--desaturated-dark-blue);
+	padding: 1.2rem 0 2rem;
+}
+
+/* PERSON */
+.person {
+	background-color: var(--white);
+	padding: 1rem 3rem 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.person img {
+	width: 4rem;
+	border-radius: 50%;
+}
+
+.identity {
+	display: flex;
+	flex-direction: column;
+	padding-left: 3rem;
+	gap: 0.3rem;
+}
+
+strong {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--very-dark-grayish-blue);
+}
+
+sub {
+	font-size: 1.2rem;
+	color: var(--grayish-blue);
+}
+
+button {
+	width: 3.2rem;
+	height: 3.2rem;
+	border: none;
+	border-radius: 50%;
+	margin-left: auto;
+	z-index: 1;
+	fill: #6e8098;
+}
+
+button:hover,
+button:focus {
+	cursor: pointer;
+	scale: 107%;
+	outline: none;
+	box-shadow: rgba(0, 0, 0, 0.15) 0.195rem 0.195rem 0.26rem;
+}
+
+/* SOCIAL NETWORKS */
+.social {
+	display: none;
+	position: absolute;
+	align-items: center;
+	padding: 0 3rem;
+	gap: 1.5rem;
+	background-color: var(--very-dark-grayish-blue);
+	bottom: 0;
+	width: 100%;
+	height: 6.4rem;
+	transition: ease-in 2s;
+}
+
+.social.active {
+	display: flex;
+}
+
+.social p {
+	font-size: 1.25rem;
+	letter-spacing: 0.4rem;
+	width: fit-content;
+	padding: 0;
+	color: var(--white);
+	opacity: 0.5;
+}
+
+a {
+	color: var(--white);
+}
+
+#fb:hover {
+	color: #2ca4d9;
+}
+
+#tt:hover {
+	color: #2ca4d9;
+}
+
+#pi:hover {
+	color: #e34247;
+}
+
+.social svg {
+	width: 2rem;
+	height: fit-content;
+	align-items: center;
+}
+
+button.active {
+	background-color: var(--desaturated-dark-blue);
+	fill: var(--white);
+}
