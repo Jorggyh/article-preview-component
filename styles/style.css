@@ -85,7 +85,7 @@ p {
 .identity {
 	display: flex;
 	flex-direction: column;
-	padding-left: 3rem;
+	padding-left: 2rem;
 	gap: 0.3rem;
 }
 
